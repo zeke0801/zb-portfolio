@@ -1,0 +1,72 @@
+.App-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 10vh 2vh 10vh;
+  background-color: var(--background-main-color); /* Fixed variable syntax */
+  color: var(--submain-font-color);
+}
+
+.logo img {
+  width: 10vh;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  font-family: var(--font-body);
+  color: var(--main-font-color);
+  text-decoration: none;
+  font-size: 1rem;
+  position: relative; /* Required for positioning the underline */
+  padding-bottom: 5px; /* Space for the underline */
+}
+
+.nav-links a:hover {
+  color: antiquewhite;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px; /* Thickness of the underline */
+  background-color: var(--main-font-color);
+  transition: width 0.3s ease; /* Smooth transition */
+}
+
+.nav-links a:hover::after {
+  width: 100%; /* Underline spans the full width on hover */
+}
+
+.nav-links .active {
+  color: var(--main-font-color);
+}
+
+@media (max-width: 768px) {
+  .App-header{
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-links{
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .App-header{
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-links{
+    display: none;
+  }
+}
+

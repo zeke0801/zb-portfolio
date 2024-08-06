@@ -1,0 +1,18 @@
+/*Universal*/
+
+:root {
+  --background-main-color: #1e1f1a;
+  --main-font-color: rgb(212, 144, 60);
+  --submain-font-color: rgb(197, 196, 196);
+  
+  --font-heading: 'Montserrat', sans-serif;
+  --font-subheading: 'Lora', serif;
+  --font-body: 'Open Sans', sans-serif;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+ background-color:var(--background-main-color);
+}

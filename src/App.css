@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+@media (max-width: 768px) {
+  .triangleRow {
+    flex-direction: column; /* Stack blocks vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .aoe-block {
+    width: 100%; /* Make blocks full width on small screens */
+    max-width: 200px; /* Set a max-width to avoid overly wide blocks */
+  }
+}
+
+@media (max-width: 480px) {
+  .aoe-block {
+    max-width: 66vh; /* Further reduce max-width on very small screens */
+  }
+}

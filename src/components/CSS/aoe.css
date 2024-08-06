@@ -1,0 +1,37 @@
+.aoe {
+    padding: 2vh 10vh 2vh 10vh;
+    text-align: center;
+    background-color:var(--background-main-color);
+  }
+
+  .aoe h1 {
+    font-family: var(--font-subheading);
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: 8vh;
+    flex-shrink: 0;
+    padding-right: 10px; /* Space between text and line */
+  }
+
+  @media (max-width: 768px) {
+    .aoe {
+      padding: 2vh 5vh; /* Adjust padding for smaller screens */
+    }
+  
+    .aoe h1 {
+      font-size: 6vh; /* Reduce font size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .aoe {
+      padding: 2vh 2vh; /* Further adjust padding for very small screens */
+    }
+  
+    .aoe h1 {
+      font-size: 4vh;
+    }
+  }
+
+
+

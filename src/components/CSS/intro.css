@@ -1,0 +1,150 @@
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.intro-text {
+  animation: slideIn 1s ease-out;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 2vh 2vh 2vh;
+  margin-bottom: 4vh;
+  background-color: var(--background-main-color);
+}
+
+.intro span {
+  font-size: 6vh;
+  color: var(--main-font-color);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.intro-one {
+  flex: 1;
+  font-size: 2vh;
+  padding-right: 20px;
+  text-align: left;
+  padding-left: 25vh;
+  font-family: var(--font-subheading);
+}
+
+.intro-text h4, 
+.intro-text h1, 
+.intro-text h3 {
+  margin: 2vh 0vh 2vh 0vh; /* Remove default margin */
+  line-height: 8vh; /* Adjust line height for closer spacing */
+}
+
+.intro-text h3 a {
+  font-size: 3vh;
+  border-radius: 1vh;
+  border-style: solid;
+  padding: .5vh 3vh .5vh 3vh;
+  color: var(--main-font-color);
+  border-color: var(--main-font-color);
+  margin-top: 1vh; /* Adjust margin to separate from h1 */
+  position: relative;
+  overflow: hidden;
+  text-decoration: none; /* Ensure link text is not underlined */
+}
+
+.intro-text h3 a:hover {
+  border-color: antiquewhite;
+}
+
+.intro h1 {
+  font-size: 8vh;
+  color: var(--submain-font-color);
+}
+
+.intro h3, .intro h4 {
+  color: var(--submain-font-color);
+}
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.intro-one .socials {
+  animation: slideInFromTop 1s ease-out;
+  display: flex;
+  align-items: flex-end; /* Aligns items to the bottom */
+  height: 100px; /* Set this height as needed */
+}
+
+.intro-one .socials img {
+  width: 8vh;
+  margin-right: 1vh;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for the border and shadow */
+}
+
+.intro-one .socials img:hover {
+  transform: scale(1.1); /* Scale up the image by 10% */
+  border-radius: 10%; /* Optional: slight rounding of borders */
+}
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.intro-image {
+  animation: slideInFromBottom 1s ease-out;
+  flex: 1;
+  display: flex;
+  justify-content: right;
+  padding-right: 25vh;
+}
+
+.intro-image img {
+  width: 90%;
+  max-width: 400px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .intro-one, .socials {
+    padding: 0vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .intro-image {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-one, .socials {
+    padding: 1vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .intro-image {
+    display: none;
+  }
+}
