@@ -6,6 +6,8 @@ const Header = () => (
     <div className="logo">
       <img src="/img/ZB.png" alt="Logo" />
     </div>
+    <div className="social-icons">
+    </div>
     <nav className="nav-links">
       <a href="#add-about">About</a>
       <a href="#add-skills">Skills</a>
@@ -15,8 +17,6 @@ const Header = () => (
       <a href="#add-resume">Resume</a>
       <a href="#add-contact">Contact</a>
     </nav>
-    <div className="social-icons">
-    </div>
   </header>
 );
 

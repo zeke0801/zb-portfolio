@@ -14,8 +14,13 @@ const skills = [
   { img: '/img/wordpress.svg', label: 'WordPress', years: '1+ Year' },
   { img: '/img/wix.svg', label: 'Wix', years: '1+ Year' },
   { img: '/img/teams.svg', label: 'Teams', years: '1+ Year' },
-  { img: '/img/clickup.svg', label: 'ClickUp', years: '2+ Year' },
-  { img: '/img/slack.svg', label: 'Slack', years: '1+ Year' },
+  { img: '/img/clickup.svg', label: 'ClickUp', years: '6+ Year' },
+  { img: '/img/docs.svg', label: 'G-Docs', years: '6+ Year' },
+  { img: '/img/forms.svg', label: 'G-Forms', years: '3+ Year' },
+  { img: '/img/slides.svg', label: 'G-Slides', years: '6+ Year' },
+  { img: '/img/calendar.svg', label: 'G-Calendar', years: '6+ Year' },
+  { img: '/img/sheets.svg', label: 'G-Sheets', years: '6+ Year' },
+  { img: '/img/not1.svg', label: 'Notion', years: '1+ Year' },
 ];
 
 const AreaOfExpertise = () => (

@@ -4,13 +4,14 @@ import './CSS/files.css';
 const certifications = [
     { img: '/img/hs1.png', alt: 'Hubspot SEO I' },
     { img: '/img/hs2.png', alt: 'Hubspot SEO II' },
+    { img: '/img/scrum.png', alt: 'Scrum Agile' },
 ];
 
 const resume = [
     {
         img: '/img/betito-resume.png',
         alt: 'Betito Resume',
-        link: 'pdf/Betito_resume.pdf',
+        link: 'pdf/Betito_Resume.pdf',
     },
 ];
 

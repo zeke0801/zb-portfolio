@@ -12,10 +12,10 @@ const Contact = () => (
     <span></span><h1>Contact Me</h1><span></span>
   </div>
   <div className='sect-cont'>
-    <div className='email'><img src="/img/email.svg"></img> 
+    <div className='email'><img src="/img/email.svg" alt='email'></img> 
       jlbetito0801@gmail.com
     </div>
-    <div className='phone'><img src="/img/phone.svg"></img> 
+    <div className='phone'><img src="/img/phone.svg" alt='phone'></img> 
       +63 917 123 7040
     </div>
   </div>
